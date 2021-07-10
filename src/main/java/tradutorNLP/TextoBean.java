@@ -35,6 +35,8 @@ public class TextoBean {
 	 * que irão processar o texto em liguagem natural
 	 */
 	public void processarTexto() {
-		this.saidaTexto = this.texto;
+		NLPtoSQL conversor = new NLPtoSQL(this.texto);
+		//System.getProperty("java.classpath");
+		this.saidaTexto = conversor.toSQL();
 	}
 }
