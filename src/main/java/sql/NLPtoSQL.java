@@ -11,7 +11,6 @@ public class NLPtoSQL {
 	 */
 	public static void salvarScripts (ArrayList<String> scripts) {
 		for (String script:scripts) {
-			//System.out.println(script);
 			DB.updateDatabase(script);
 		}
 	}

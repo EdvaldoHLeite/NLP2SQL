@@ -12,9 +12,8 @@
 	<h:body>
     	<h2>NLP to SQL</h2>
     	<h:form>
-    		<div>
+    		<!-- div>
     			<h:outputLabel value="Texto: " for="texto"></h:outputLabel>
-    			<!--h:inputText id='texto' value="#{textoBean.texto}" required="true" requiredMessage="Preencha o campo do texto!"></h:inputText-->
     			<h:inputText id='texto' value="#{textoBean.texto}"></h:inputText>
     			
     			<h:commandButton value="Processar texto" action="#{textoBean.processarTexto()}"></h:commandButton>
@@ -22,7 +21,7 @@
     		
     		<div>
     			<h:outputLabel value="Saida: #{textoBean.saidaTexto}"></h:outputLabel>
-    		</div>
+    		</div-->
     		
     		<div>
     			<h:commandButton value="Ir para o Chat Bot" action="#{botBean.abrirChat()}"></h:commandButton>

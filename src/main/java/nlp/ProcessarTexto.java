@@ -17,11 +17,6 @@ import opennlp.tools.parser.ParserModel;
 public class ProcessarTexto {
 	static InputStream modelIn;
 	static InputStream dictLemmatizer;
-	
-	public ProcessarTexto() {
-		this.modelIn = null;
-		this.dictLemmatizer = null;
-	}
 
 	public static boolean ehVerbo(String tag) {
 		if (tag.equals("VB") || tag.equals("VBD") || 

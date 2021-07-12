@@ -7,8 +7,21 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>NLP2SQL Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  <dependencies>
-  	
+  
+  <repositories>
+  		<repository>
+    		<id>JCenter</id>
+    		<url>https://jcenter.bintray.com</url>
+		</repository>
+  	</repositories>
+  
+  <dependencies>  	  
+	<dependency>
+	    <groupId>org.goldrenard</groupId>
+	    <artifactId>ab</artifactId>
+	    <version>1.0.7</version>
+	</dependency>
+  
   	<!-- https://mvnrepository.com/artifact/org.apache.opennlp/opennlp-tools -->
 	<dependency>
 	    <groupId>org.apache.opennlp</groupId>
